@@ -14,6 +14,9 @@ app.get('/about', (req, res) => {
 app.get('/service', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/public/service.html'));
 })
+app.get('/blog', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/public/blog.html'));
+})
 
 app.listen(port, () => {
   console.log(`Our Ecommer App Listening On Port ${port}`)
